@@ -8,7 +8,11 @@ namespace RattrapDev.Scribe.Term
 		public AggregateRoot(string name, string definition)
 			: base(name, definition)
 		{
-		}
-	}
+        }
+        public AggregateRoot(string name, string definition, string module)
+            : base(name, definition, module)
+        {
+        }
+    }
 }
 

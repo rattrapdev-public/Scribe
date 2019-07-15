@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using RattrapDev.Scribe.Term;
+using Shouldly;
 
 namespace RattrapDev.Scribe.Tests
 {
@@ -11,11 +12,12 @@ namespace RattrapDev.Scribe.Tests
 		{
 			var attributes = typeof(TestValueObject).GetCustomAttributes(true);
 			var valueObjectTerm = (ValueObject)attributes[0];
-			Assert.That(valueObjectTerm.Name, Is.EqualTo("Value"));
-			Assert.That(valueObjectTerm.Definition, Is.EqualTo("Definition"));
-		}
+            valueObjectTerm.Name.ShouldBe("Value");
+            valueObjectTerm.Definition.ShouldBe("Definition");
+            valueObjectTerm.Module.ShouldBe("Module");
+        }
 
-		[ValueObject("Value", "Definition")]
+		[ValueObject("Value", "Definition", "Module")]
 		private class TestValueObject 
 		{
 		}

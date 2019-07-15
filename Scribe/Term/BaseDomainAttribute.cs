@@ -14,20 +14,36 @@ namespace RattrapDev.Scribe.Term
 		}
 
 		internal BaseDomainAttribute(string name, string definition)
+            : this(name, definition, string.Empty)
 		{
-			Name = name;
-			Definition = definition;
-		}
+        }
+
+        internal BaseDomainAttribute(string name, string definition, string module)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentException("The name must be provided");
+            }
+
+            Name = name;
+            Definition = definition;
+            Module = module;
+        }
+
+        /// <summary>
+        /// Gets or sets the Name of the class in long form.
+        /// </summary>
+        public string Name { get; private set; }
 
 		/// <summary>
-		/// Gets or sets the Name of the class in long form.
-		/// </summary>
-		public string Name { get; private set; }
-
-		/// <summary>
-		/// Gets the definitions of the Domain class.
+		/// Gets the definition of the Domain class.
 		/// </summary>
 		public string Definition { get; private set; }
-	}
+
+        /// <summary>
+        /// Gets the module of the Domain class.
+        /// </summary>
+        public string Module { get; private set; }
+    }
 }
 

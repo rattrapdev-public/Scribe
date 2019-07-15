@@ -8,7 +8,12 @@ namespace RattrapDev.Scribe.Term
 		public Entity(string name, string definition)
 			: base(name, definition)
 		{
-		}
-	}
+        }
+
+        public Entity(string name, string definition, string module)
+            : base(name, definition, module)
+        {
+        }
+    }
 }
 

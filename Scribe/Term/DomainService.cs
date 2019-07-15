@@ -9,6 +9,11 @@ namespace RattrapDev.Scribe.Term
 			: base(name, definition)
 		{
 		}
+
+        public DomainService(string name, string definition, string module) 
+            : base(name, definition, module)
+        {
+        }
 	}
 }
 
