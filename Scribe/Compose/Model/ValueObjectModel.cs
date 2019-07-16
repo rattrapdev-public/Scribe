@@ -1,4 +1,4 @@
-﻿namespace RattrapDev.Scribe.Compose
+﻿namespace RattrapDev.Scribe.Compose.Model
 {
     public class ValueObjectModel
     {

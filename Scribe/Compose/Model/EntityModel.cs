@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace RattrapDev.Scribe.Compose
+namespace RattrapDev.Scribe.Compose.Model
 {
     public class EntityModel
     {

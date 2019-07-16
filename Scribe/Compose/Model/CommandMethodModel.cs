@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace RattrapDev.Scribe.Compose
+namespace RattrapDev.Scribe.Compose.Model
 {
     public class CommandMethodModel
     {

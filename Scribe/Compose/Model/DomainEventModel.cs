@@ -1,6 +1,6 @@
-﻿namespace RattrapDev.Scribe.Compose
+﻿namespace RattrapDev.Scribe.Compose.Model
 {
-    public class DomainServiceModel
+    public class DomainEventModel
     {
         public string Name { get; set; }
         public string Definition { get; set; }

@@ -1,9 +1,8 @@
-﻿using RattrapDev.Scribe.Term;
-using System;
-using System.Collections.Generic;
+﻿using RattrapDev.Scribe.Compose.Model;
+using RattrapDev.Scribe.Term;
 using System.Linq;
 using System.Reflection;
-using System.Text;
+using Module = RattrapDev.Scribe.Compose.Model.Module;
 
 namespace RattrapDev.Scribe.Compose
 {
