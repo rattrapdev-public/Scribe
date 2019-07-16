@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TestScribe.Store
 {
-    [DomainService("Store Transaction Service", "Processes transactions made by customers")]
+    [DomainService("Store Transaction Service", "Processes transactions made by customers", "Store")]
     public class StoreTransactionService
     {
     }

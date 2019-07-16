@@ -5,7 +5,7 @@ using TestScribe.Store;
 
 namespace TestScribe.Customer
 {
-    [DomainEvent("Customer Checkout", "An event indicating that the customer has checked out with the given items")]
+    [DomainEvent("Customer Checkout", "An event indicating that the customer has checked out with the given items", "Customer")]
     public class CustomerCheckoutEvent
     {
         public Name Name { get; set; }

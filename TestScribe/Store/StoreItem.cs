@@ -2,7 +2,7 @@
 
 namespace TestScribe.Store
 {
-    [ValueObject("Store Item", "An item available for purchase")]
+    [ValueObject("Store Item", "An item available for purchase", "Store")]
     public class StoreItem
     {
         public string ItemCode { get; set; }

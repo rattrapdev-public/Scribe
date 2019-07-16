@@ -6,7 +6,7 @@ using TestScribe.Store;
 
 namespace TestScribe.Customer
 {
-    [ValueObject("Cart", "A collection of store items available for purchase")]
+    [ValueObject("Cart", "A collection of store items available for purchase", "Customer")]
     public class Cart : IEnumerable<StoreItem>
     {
         private List<StoreItem> items;

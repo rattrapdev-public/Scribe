@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TestScribe.Store
 {
-    [AggregateRoot("Store", "A place where Store Items can be purchased")]
+    [AggregateRoot("Store", "A place where Store Items can be purchased", "Store")]
     public class Store
     {
         public StoreMetadata Metadata { get; set; }
