@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace RattrapDev.Scribe.Compose
 {
-    public class CompositionService
+    public class CompositionService : ICompositionService
     {
         private IFileLoader _fileLoader;
 
