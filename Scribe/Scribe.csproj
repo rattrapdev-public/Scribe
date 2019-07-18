@@ -19,6 +19,7 @@
     <AssemblyVersion>0.0.1.0</AssemblyVersion>
     <FileVersion>0.0.1.0</FileVersion>
     <Description>Glossary writer for DDD projects</Description>
+    <Product>Scribe Glossary Writer</Product>
   </PropertyGroup>
 
   <ItemGroup>
