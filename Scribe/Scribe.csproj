@@ -20,6 +20,7 @@
     <FileVersion>0.0.1.0</FileVersion>
     <Description>Glossary writer for DDD projects</Description>
     <Product>Scribe Glossary Writer</Product>
+    <PackageId>ScribeGlossaryWriter</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
